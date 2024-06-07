@@ -1,0 +1,72 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<header>
+ <nav>
+  <div id="iconContainer">
+   <img id="imgIcono" src="/icono.png" alt="Icono" />
+  </div>
+  <div class="internal-links">
+   <HeaderLink href="/">Inicio</HeaderLink>
+   <HeaderLink href="#Footer">Contactanos</HeaderLink>
+   <HeaderLink href="/about">Nosotros</HeaderLink>
+  </div>  
+ </nav>
+</header>
+<style>
+	
+ img {
+  height: 90px;
+ }
+ header {
+  margin: 0;
+  padding: 0 1em;
+  background: white;
+  box-shadow: 0 2px 8px rgba(var(--black), 5%);
+  position: fixed;  /* Hace que la barra de navegación sea fija */
+  top: 0;  /* Alinea la barra de navegación con la parte superior de la página */
+  width: 100%;  /* Asegura que la barra de navegación se extienda a lo largo de toda la página */
+  backdrop-filter: blur(10px);  /* Aplica un efecto de desenfoque al contenido detrás de la barra de navegación */
+  background-color: rgba(255, 255, 255, 0.7);  /* Aplica un color de fondo blanco con una transparencia del 70% */
+  /* El resto de tus estilos... */
+ }
+ h2 {
+  margin: 0;
+  font-size: 1em;
+ }
+
+ h2 a,
+ h2 a.active {
+  text-decoration: none;
+ }
+ nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ nav a {
+  padding: 1em 0.5em;
+  color: var(--black);
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+ }
+ nav a.active {
+  text-decoration: none;
+  border-bottom-color: var(--accent);
+ }
+ .social-links,
+ .social-links a {
+  display: flex;
+ }
+ @media (max-width: 720px) {
+  img {
+   height: 45px;
+   width: 90px;
+  }
+  .social-links {
+   display: none;
+  }
+ }
+</style>

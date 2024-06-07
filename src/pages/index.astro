@@ -1,0 +1,43 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Card from "../components/Card.astro";
+import Separator from '../components/separator.astro'
+import WhatsappIcon from "../components/WhatsappIcon.astro";
+---
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+ </head>
+ <body>
+  <Header />
+  <main>
+   <h1 class="titulo">📦 Hola! Somos Custodia de Archivos Noroeste SRL</h1>
+   <h3 style={{ color: "#f37324" }}>¡Tus archivos en las mejores manos!</h3>
+   <p>
+    <span style={{ color: "#003f5c", fontWeight: "bold" }}
+     >Somos tu aliado estratégico en la gestión documental.</span
+    > Te ofrecemos un servicio integral de logística, organización, administración,
+    preservación y custodia de archivos físicos. <span
+     style={{ color: "#003f5c", fontWeight: "bold" }}
+     >Tranquilidad y eficiencia para tu negocio.</span
+    > Nos encargamos de todo para que tú te concentres en lo que realmente importa:
+    ¡hacer crecer tu empresa!
+   </p>
+   <img id="imgEmpresa" src="/Empresa.png" alt="Empresa" />
+   <Separator text="Nuestos Servicios"/>
+   <Card />
+  </main>
+  <WhatsappIcon />
+  <Footer />
+ </body>
+ <style>
+    .titulo{
+        margin-top: 4rem;
+    }
+ </style>
+</html>

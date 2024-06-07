@@ -1,0 +1,56 @@
+<div class="container">
+ <div class="card">
+  <label for="">Guarda y Preservación de Documentación</label>
+  <img src="/Bodega.png" alt="" />
+ </div>
+ <div class="card">
+  <label for="">Retiro, Clasificación y Consulta Documental</label>
+  <img src="/Iso.png" alt="" />
+ </div>
+ <div class="card">
+  <label for="">Depuración y Destruccion de Papel</label>
+  <img id="imgCard" src="/Destruccion.png" alt="" />
+ </div>
+</div>
+
+<style>
+ .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: -1;
+  flex: 1;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 20px;
+  height: 250px; /* Ajusta este valor según tus necesidades */
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.card label {
+  display: block;
+  height: 60px; /* Ajusta este valor según tus necesidades */
+  overflow: hidden;
+  flex: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100px; /* Ajusta este valor según tus necesidades */
+  object-fit: cover; /* Esto hará que la imagen se ajuste al tamaño especificado sin distorsionarse */
+}
+
+</style>

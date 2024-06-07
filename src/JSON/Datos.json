@@ -1,0 +1,17 @@
+{
+ "basics": {
+  "empresa": "Custodia de Archivos Noroeste SRL",
+  "email": "atencionalcliente@archivosnoroeste.com",
+  "phone": "+543814243030",
+  "whatsapp": "+543814693997",
+  "message1": "¡Hola y bienvenido al chat de consulta web! Estamos aquí para ayudarte con cualquier pregunta o inquietud que tengas sobre nuestros productos o servicios. No dudes en contarnos cómo podemos asistirte hoy. Escribe tus preguntas o comentarios y te responderemos rápidamente. ¡Gracias por comunicarte con nosotros y esperamos poder ayudarte pronto!",
+  "message2":"Hola, me gustaría obtener más información sobre...",
+  "location": {
+   "address": "Simón Bolívar 1531",
+   "postalCode": "4000",
+   "city": "San Miguel de Tucumán",
+   "country": "Tucumán",
+   "region": "Argentina"
+  }
+ }
+}

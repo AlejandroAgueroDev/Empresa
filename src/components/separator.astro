@@ -1,0 +1,94 @@
+---
+const { text } = Astro.props;
+---
+
+<div class="center-container">
+ <div id="myDiv">
+  <div id="gradientDiv"></div>
+  <div id="borderDiv"></div>
+  <div id="textDiv">
+   <p>{text}</p>
+   <div id="svgDiv">
+    <svg
+     class="svgClass"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     viewBox="0 0 24 24"
+     stroke-width="1.5"
+     stroke="currentColor"
+    >
+     <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"></path>
+    </svg>
+   </div>
+  </div>
+ </div>
+</div>
+
+<style>
+ #myDiv {
+  position: relative;
+  margin: 80px 0;
+  z-index: -1;
+ }
+
+ #gradientDiv {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear(to right, transparent, white);
+ }
+
+ #borderDiv {
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #b3b3b6;
+ }
+
+ #textDiv {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6rem;
+  left: 21rem;
+  margin-left: 20px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #b3b3b6;
+  border-radius: 9999px;
+  background-color: white;
+  color: #7f8081;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+ }
+
+ #svgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  transform: translateX(4px);
+  border: 1px solid #f3f4f6;
+  border-radius: 9999px;
+ }
+
+ .svgClass {
+  width: 12px;
+  height: 12px;
+ }
+
+ @media (max-width: 720px) {
+  .center-container {
+   justify-content: center;
+   align-items: center;
+   margin-left: -10rem;
+  }
+ }
+</style>
