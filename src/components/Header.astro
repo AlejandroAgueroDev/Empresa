@@ -10,8 +10,8 @@ import { SITE_TITLE } from "../consts";
   </div>
   <div class="internal-links">
    <HeaderLink href="/">Inicio</HeaderLink>
-   <HeaderLink href="#Footer">Contactanos</HeaderLink>
-   <HeaderLink href="/about">Nosotros</HeaderLink>
+   <!-- <HeaderLink href="#Footer">Contactanos</HeaderLink> -->
+   <HeaderLink href="/Nosotros">Nosotros</HeaderLink>
   </div>  
  </nav>
 </header>
@@ -31,6 +31,7 @@ import { SITE_TITLE } from "../consts";
   backdrop-filter: blur(10px);  /* Aplica un efecto de desenfoque al contenido detrás de la barra de navegación */
   background-color: rgba(255, 255, 255, 0.7);  /* Aplica un color de fondo blanco con una transparencia del 70% */
   /* El resto de tus estilos... */
+  z-index: 1;
  }
  h2 {
   margin: 0;
@@ -48,7 +49,7 @@ import { SITE_TITLE } from "../consts";
  }
  nav a {
   padding: 1em 0.5em;
-  margin-right: 1em; /* Agrega esto */
+  margin-right: 2em; 
   color: var(--black);
   border-bottom: 4px solid transparent;
   text-decoration: none;
@@ -71,7 +72,7 @@ import { SITE_TITLE } from "../consts";
   }
 
   nav a {
-    margin-right: 1em; /* Agrega esto */
+    margin-right: 1em; 
   }
  }
 </style>
